@@ -1,6 +1,6 @@
 using BenchmarkDotNet.Attributes;
 
-namespace DotNetMicroBenchmarks.Benchmarks.Boxing;
+namespace DotNetMicroBenchmarks.Benchmarks.Boxing.PrimitiveBoxing;
 
 public interface IKeyValuePair
 {
@@ -68,11 +68,11 @@ public class Container<TKey>
 }
 
 [MemoryDiagnoser(true)]
-public class PrimitiveBoxing
+public class Benchmark
 {
     private Container<int> _container = new Container<int>();
 
-    public PrimitiveBoxing()
+    public Benchmark()
     {
         var numElements = 1000;
         for (var i = 0; i < numElements; i++)
