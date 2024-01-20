@@ -1,0 +1,24 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFramework>netstandard2.1</TargetFramework>
+        <ImplicitUsings>disable</ImplicitUsings>
+        <Nullable>enable</Nullable>
+        <AssemblyName>DotNetMicroBenchmarks.Benchmarks</AssemblyName>
+        <LangVersion>9</LangVersion>
+        <RootNamespace>DotNetMicroBenchmarks</RootNamespace>
+        <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    </PropertyGroup>
+
+    <ItemGroup>
+      <PackageReference Include="BenchmarkDotNet" Version="0.13.11" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <Compile Include="../DotNetMicroBenchmarks.Unity/Assets/DotNetMicroBenchmarks/**/*.cs" />
+      <Compile Update="..\DotNetMicroBenchmarks.Unity\Assets\DotNetMicroBenchmarks\Benchmarks\Dictionary\IMixedValueDictionary.cs">
+        <Link>Benchmarks\Dictionary\IMixedValueDictionary.cs</Link>
+      </Compile>
+   </ItemGroup>
+
+</Project>

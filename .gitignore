@@ -3,3 +3,12 @@ obj/
 /packages/
 riderModule.iml
 /_ReSharper.Caches/
+DotNetMicroBenchmarks.Unity/.idea
+DotNetMicroBenchmarks.Unity/build
+DotNetMicroBenchmarks.Unity/build_BurstDebugInformation_DoNotShip
+DotNetMicroBenchmarks.Unity/Library
+DotNetMicroBenchmarks.Unity/Logs
+DotNetMicroBenchmarks.Unity/*.csproj
+DotNetMicroBenchmarks.Unity/*.sln
+DotNetMicroBenchmarks.Unity/UserSettings
+.DS_Store
